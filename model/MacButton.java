@@ -2,10 +2,10 @@ package model;
 
 import interfaces.iButton;
 
-public class Button implements iButton {
+public class MacButton implements iButton {
     private String label;
 
-    public Button(String label) {
+    public MacButton(String label) {
         this.label = label;
     }
 
@@ -21,6 +21,6 @@ public class Button implements iButton {
 
     @Override
     public String toString() {
-        return "Label do botão: " + this.label;
+        return "Label do botão Mac: " + this.label;
     }
 }

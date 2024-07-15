@@ -2,10 +2,10 @@ package model;
 
 import interfaces.iTextArea;
 
-public class TextArea implements iTextArea{
+public class WinTextArea implements iTextArea {
     private String textValue;
 
-    public TextArea(String textValue) {
+    public WinTextArea(String textValue) {
         this.textValue = textValue;
     }
 
@@ -21,6 +21,6 @@ public class TextArea implements iTextArea{
 
     @Override
     public String toString() {
-        return "Texto do textArea: " + this.textValue;
+        return "Texto do textArea Windows: " + this.textValue;
     }
 }

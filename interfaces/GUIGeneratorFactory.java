@@ -1,14 +1,10 @@
 package interfaces;
 
-import model.Button;
-import model.SelectionBox;
-import model.TextArea;
-
 public interface GUIGeneratorFactory {
-    public Button generateButton(String label);
+    public iButton generateButton(String label);
 
-    public TextArea generateTextArea(String textValue);
+    public iTextArea generateTextArea(String textValue);
 
-    public SelectionBox generateSelectionBox(String textValue);
+    public iSelectionBox generateSelectionBox(String textValue);
 
 }

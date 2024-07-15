@@ -1,25 +1,25 @@
 package interfaces;
 
-import model.Button;
-import model.SelectionBox;
-import model.TextArea;
+import model.MacButton;
+import model.MacSelectionBox;
+import model.MacTextArea;
 
 public class MacOSGUIFactory implements GUIGeneratorFactory {
 
     @Override
-    public Button generateButton(String label) {
-        return new Button(label);
+    public MacButton generateButton(String label) {
+        return new MacButton(label);
     }
 
     @Override
-    public TextArea generateTextArea(String textValue) {
-        return new TextArea(textValue);
+    public MacTextArea generateTextArea(String textValue) {
+        return new MacTextArea(textValue);
 
     }
 
     @Override
-    public SelectionBox generateSelectionBox(String textValue) {
-        return new SelectionBox(textValue);
+    public MacSelectionBox generateSelectionBox(String textValue) {
+        return new MacSelectionBox(textValue);
     }
 
     public String toString() {

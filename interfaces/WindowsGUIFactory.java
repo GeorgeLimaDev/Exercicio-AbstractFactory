@@ -1,25 +1,25 @@
 package interfaces;
 
-import model.Button;
-import model.SelectionBox;
-import model.TextArea;
+import model.WinButton;
+import model.WinSelectionBox;
+import model.WinTextArea;
 
 public class WindowsGUIFactory implements GUIGeneratorFactory {
 
     @Override
-    public Button generateButton(String label) {
-        return new Button(label);
+    public WinButton generateButton(String label) {
+        return new WinButton(label);
     }
 
     @Override
-    public TextArea generateTextArea(String textValue) {
-        return new TextArea(textValue);
+    public WinTextArea generateTextArea(String textValue) {
+        return new WinTextArea(textValue);
 
     }
 
     @Override
-    public SelectionBox generateSelectionBox(String textValue) {
-        return new SelectionBox(textValue);
+    public WinSelectionBox generateSelectionBox(String textValue) {
+        return new WinSelectionBox(textValue);
     }
 
     public String toString() {
